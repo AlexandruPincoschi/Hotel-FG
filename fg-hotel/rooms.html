@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Habitaciones · FG Logroño</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+</head>
+<body data-page="rooms">
+
+<nav class="navbar navbar-expand-lg navbar-fg sticky-top">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">FG Logroño<small>Hotel · 3 estrellas</small></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Abrir menú">
+      <i class="bi bi-list fs-3"></i><i class="bi bi-x-lg fs-5"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="menu">
+      <ul class="navbar-nav ms-lg-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+        <li class="nav-item"><a class="nav-link active" aria-current="page" href="rooms.html">Habitaciones</a></li>
+        <li class="nav-item"><a class="nav-link" href="index.html#reserva">Reserva</a></li>
+        <li class="nav-item"><a class="nav-link" href="index.html#contacto">Contacto</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<header class="section pb-0">
+  <div class="container">
+    <div class="eyebrow">Habitaciones</div>
+    <h1 class="display-6 fw-semibold mb-2">Modernas, funcionales y luminosas</h1>
+    <p class="text-muted-fg mb-0">Diseño y comodidad a medida: minibar, wifi gratis, baño privado y vistas exteriores.</p>
+  </div>
+</header>
+
+<main class="section">
+  <div class="container">
+    <div class="d-flex gap-2 overflow-auto pb-3 mb-3" role="group" aria-label="Filtrar por tipo">
+      <button type="button" class="btn btn-outline-fg rounded-pill px-3 active" data-filter="all">Todas</button>
+      <button type="button" class="btn btn-outline-fg rounded-pill px-3" data-filter="individual">Individual</button>
+      <button type="button" class="btn btn-outline-fg rounded-pill px-3" data-filter="doble">Dobles</button>
+      <button type="button" class="btn btn-outline-fg rounded-pill px-3" data-filter="triple">Triples</button>
+      <button type="button" class="btn btn-outline-fg rounded-pill px-3" data-filter="suite">Suites</button>
+    </div>
+
+    <div class="row row-cols-1 row-cols-md-2 row-cols-xl-4 g-4">
+      <div class="col" data-type="doble">
+        <article class="card card-fg h-100">
+          <img src="img/hab-doble.jpg" class="card-img-top img-ph img-card" alt="Habitación Doble Estándar">
+          <div class="card-body d-flex flex-column">
+            <h2 class="h4">Habitación Doble Estándar</h2>
+            <p class="small text-muted-fg">Cama de matrimonio o dos individuales, posibilidad de supletoria, vistas exteriores y baño privado.</p>
+            <div class="d-flex flex-wrap gap-2 mb-3"><span class="chip">Wifi gratis</span><span class="chip">Minibar</span><span class="chip">Caja fuerte</span></div>
+            <div class="mt-auto d-flex justify-content-between align-items-end border-top pt-3">
+              <div><div class="small text-muted-fg">Desde / noche</div><div class="price">75 €</div></div>
+              <a href="index.html#reserva" class="btn btn-fg px-4">Reservar</a>
+            </div>
+          </div>
+        </article>
+      </div>
+      <div class="col" data-type="individual">
+        <article class="card card-fg h-100">
+          <img src="img/hab-individual.jpg" class="card-img-top img-ph img-card" alt="Habitación Doble Uso Individual">
+          <div class="card-body d-flex flex-column">
+            <h2 class="h4">Doble Uso Individual</h2>
+            <p class="small text-muted-fg">Ideal para viajes de negocios: total intimidad con todos los servicios al alcance.</p>
+            <div class="d-flex flex-wrap gap-2 mb-3"><span class="chip">Wifi gratis</span><span class="chip">TV satélite</span><span class="chip">Escritorio</span></div>
+            <div class="mt-auto d-flex justify-content-between align-items-end border-top pt-3">
+              <div><div class="small text-muted-fg">Desde / noche</div><div class="price">65 €</div></div>
+              <a href="index.html#reserva" class="btn btn-fg px-4">Reservar</a>
+            </div>
+          </div>
+        </article>
+      </div>
+      <div class="col" data-type="triple">
+        <article class="card card-fg h-100">
+          <img src="img/hab-triple.jpg" class="card-img-top img-ph img-card" alt="Habitación Triple">
+          <div class="card-body d-flex flex-column">
+            <h2 class="h4">Habitación Triple</h2>
+            <p class="small text-muted-fg">Espacio versátil con cama de matrimonio o dos individuales más supletoria, para viajar en grupo.</p>
+            <div class="d-flex flex-wrap gap-2 mb-3"><span class="chip">Hasta 3 personas</span><span class="chip">Minibar</span><span class="chip">Baño privado</span></div>
+            <div class="mt-auto d-flex justify-content-between align-items-end border-top pt-3">
+              <div><div class="small text-muted-fg">Desde / noche</div><div class="price">95 €</div></div>
+              <a href="index.html#reserva" class="btn btn-fg px-4">Reservar</a>
+            </div>
+          </div>
+        </article>
+      </div>
+      <div class="col" data-type="suite">
+        <article class="card card-fg h-100">
+          <img src="img/hab-suite.jpg" class="card-img-top img-ph img-card" alt="Junior Suite">
+          <div class="card-body d-flex flex-column">
+            <h2 class="h4">Junior Suite</h2>
+            <p class="small text-muted-fg">Dos ambientes con zona de estar y cómodas camas, para una estancia de lujo en pleno casco histórico.</p>
+            <div class="d-flex flex-wrap gap-2 mb-3"><span class="chip">2 ambientes</span><span class="chip">Zona de estar</span><span class="chip">Minibar</span></div>
+            <div class="mt-auto d-flex justify-content-between align-items-end border-top pt-3">
+              <div><div class="small text-muted-fg">Desde / noche</div><div class="price">120 €</div></div>
+              <a href="index.html#reserva" class="btn btn-fg px-4">Reservar</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+
+    <div class="offer mt-5">
+      <h2 class="mb-1">Mejor precio online garantizado</h2>
+      <p class="mb-0">Usa el código <strong>OFERTA10</strong> y obtén un 10% de descuento reservando en la web oficial.</p>
+    </div>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="row g-3">
+      <div class="col-md-4"><div class="brand">FG Logroño</div><p class="small mb-0">Avenida de Viana 2-6, 26001 Logroño<br>941 008 900</p></div>
+      <div class="col-6 col-md-4 d-flex flex-column"><a href="index.html">Inicio</a><a href="rooms.html">Habitaciones</a></div>
+      <div class="col-6 col-md-4 d-flex flex-column"><a href="index.html#reserva">Reserva</a><a href="index.html#contacto">Contacto</a></div>
+    </div>
+    <div class="legal">Proyecto académico inspirado en el Hotel FG Logroño. Diseño propio; no es la web oficial.</div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
